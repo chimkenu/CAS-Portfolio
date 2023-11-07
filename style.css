@@ -1,0 +1,196 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	height: 100%;
+	width: 100%;
+	background-color: #222;
+	color: #eee;
+	font-family: 'Courier New', Courier, monospace;
+	font-size: medium;
+	line-height: 1.6em;
+	text-align: justify;
+	text-justify: inter-word;
+	margin: 0;
+}
+
+.link:not(:hover) {
+	text-decoration: none;
+	color: #fff;
+	transition: ease-in 150ms;
+}
+
+.link:hover {
+	text-decoration: none;
+	color: orange;
+	transition: ease-in 150ms;
+}
+
+.inline-link {
+	text-decoration: none;
+	color: orange;
+	transition: ease-in 150ms;
+}
+
+.row {
+	width: 100%;
+}
+
+nav {
+	background-color: #333;
+	top: 0;
+	height: 5em;
+	margin-bottom: 3em;
+	font-size: larger;
+}
+
+nav a {
+	margin-left: 1em;
+}
+
+#nav-left {
+	padding-left: 1em;
+	float: left;
+	cursor: default;
+}
+
+#nav-left span {
+	font-size: xx-large;
+	cursor: default;
+	transition: ease-in 150ms;
+}
+
+#nav-right {
+	padding-right: 1em;
+	float: right;
+}
+
+h3 {
+	display: inline;
+}
+
+small {
+	color: #ccc;
+	font-size: large;
+}
+
+.section {
+	margin: 3em 0 0.5em 0;
+	text-align: center;
+}
+
+.input {
+	background: transparent;
+	border: 0px;
+	border-bottom: 1px solid white;
+	color: white !important;
+}
+
+.input:focus {
+	background: transparent;
+}
+
+form {
+	margin-bottom: 10em;
+}
+
+form button {
+	background: transparent;
+	border: 1px solid white;
+	color: white;
+	margin: 1em 0;
+	width: 15%;
+}
+
+.card {
+	background: transparent;
+	overflow: hidden;
+	border: 1px solid gray;
+	width: 18rem;
+	margin: 1rem;
+	position: relative;
+	text-decoration: none;
+	aspect-ratio: 2 / 3;
+}
+
+.card img {
+	position: absolute;
+	opacity: 1;
+	transition: ease-in 200ms;
+}
+
+.card:hover img {
+	opacity: 0.3;
+}
+
+.card h1 {
+	position: absolute;
+	color: white;
+	transition: ease-in 200ms;
+	bottom: 35px;
+	left: 1rem;
+	transform: translate(0px, 5px);
+	opacity: 0;
+}
+
+.card .creativity {
+	position: absolute;
+	bottom: 5px;
+	left: 15px;
+	padding: 1% 2%;
+	border-radius: 15px;
+	width: fit-content;
+	background-color: red;
+	color: white;
+}
+
+.card .activity {
+	position: absolute;
+	bottom: 5px;
+	left: 15px;
+	padding: 1% 2%;
+	border-radius: 15px;
+	width: fit-content;
+	background-color: greenyellow;
+	color: white;
+}
+
+.card .service {
+	position: absolute;
+	bottom: 5px;
+	left: 15px;
+	padding: 1% 2%;
+	border-radius: 15px;
+	width: fit-content;
+	background-color: blue;
+	color: white;
+}
+
+.card .reveal {
+	transition: ease-in 200ms;
+	transform: translate(0px, 5px);
+	opacity: 0;
+}
+
+.card:hover .reveal {
+	transform: translate(0px, -5px);
+	opacity: 1;
+}
+
+#senka img {
+	transform: translate(-115px, 0px);
+}
+
+#senka .service {
+	left: 160px;
+}
+
+
+#exercise img {
+	transform: translate(-250px, 0px);
+}
+
+#portfolio img {
+	transform: translate(-15px, 0px);
+}
